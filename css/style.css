@@ -1,0 +1,177 @@
+.fila{
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    border: 2px solid #671212;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start; */
+
+}
+
+.fila .cont-btn h2{
+    color: #252322;
+    font-size: 50px;
+}
+
+.fila .cont-btn{
+    width: 50%;
+    height: 84%;
+    background-color: #374999;
+    text-align: center;
+    padding: 48px 30px ;
+}
+
+.fila .cont-btn button{
+    padding: 8px 15px;
+    font-size: 22px;
+    border: 2px solid ;
+    margin: 10px 14px;
+    background-color: #975f3e;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.fila .cont-fig{
+    width: 50%;
+    height: 100%;
+    background-color: #975f3e;
+}
+
+.fila .cont-fig h2{
+    color: #751f17;
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+.fila .cont-fig #Figura{
+    width: 200px;  
+    height: 200px;
+    background-color: #671212;
+    margin: 0% auto;
+    transition: 1s;
+
+}
+
+.menu{
+    padding: 8px 20px;
+    background: #975f3e;
+    color: #671212;
+    position: absolute;
+    right: 360px;
+    bottom: 80px;
+    text-decoration: none;
+
+
+}
+
+/* estilos de la figura al dar click en cada boton */
+#Figura.circulo{
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+#Figura.arriba{
+    transform: translateY(-41px);
+}
+
+#Figura.abajo{
+    transform: translateY(80px);
+}
+
+#Figura.derecha{
+    transform: translateX(80px);
+}
+#Figura.izquierda{
+    transform: translateX(-80px);
+}
+
+.fila .cont-fig #Figura.imagen{
+    background-image: url(../img/img1.jpg);
+}
+
+.fila .cont-fig #Figura.triangulo{
+    background-color: transparent;
+    width: 0;
+     height: 0;
+     border-right: 150px solid transparent;
+     border-top: 150px solid transparent;
+     border-left: 150px solid transparent;
+     border-bottom: 150px solid #671212;
+     align-items: center;
+}
+
+.fila .cont-fig #Figura.rombo{
+    background-color: transparent;
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid #671212; 
+    background: #671212;
+    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+    -moz-transform: rotate(45deg) skew(15deg, 15deg);
+    -ms-transform: rotate(45deg) skew(15deg, 15deg);
+    -o-transform: rotate(45deg) skew(15deg, 15deg);
+    transform: rotate(45deg) skew(15deg, 15deg);
+}
+
+.fila .cont-fig #Figura.rectanguloho{
+    width: 250px; 
+    height: 100px; 
+    border: 3px solid #671212;
+    background: #671212;
+    
+}
+
+.fila .cont-fig #Figura.rectangulove{
+    transform: translateY(80px) rotate(90deg);
+    width: 250px; 
+    height: 100px; 
+    border: 3px solid #671212;
+    background: #671212;
+    
+}
+
+.fila .cont-fig #Figura.diagizq{
+    transform: translate(-80px,-40px);
+    -webkit-transform: translate(-80px,-40px);
+    -o-transform: translate(-80px,-40px); 
+    -moz-transform: translate(-80px,-40px);    
+    
+}
+
+.fila .cont-fig #Figura.diagde{
+    transform: translate(120px,120px);
+    -webkit-transform: translate(120px,120px);
+    -o-transform: translate(120px,120px); 
+    -moz-transform: translate(120px,120px);    
+    
+}
+
+.fila .cont-fig #Figura.luna{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #671212;
+    -webkit-box-shadow: 30px 10px 0 #671212;
+    box-shadow: 30px 10px 0 #671212;    
+    
+}
+
+.fila .cont-fig #Figura.huevo{
+    width: 126px;
+    height: 180px;
+    background-color: #671212;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    
+}
